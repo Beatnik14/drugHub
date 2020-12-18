@@ -8,6 +8,13 @@ import { MedicalFieldComponent } from './medical-field/medical-field.component';
 
 const routes: Routes = [
   {
+    
+    path: '',
+    redirectTo:'home',
+    pathMatch: 'full'
+
+  },
+  {
     path:'drugs',
     component: DrugsComponent
 
