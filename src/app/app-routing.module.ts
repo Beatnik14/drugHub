@@ -41,7 +41,7 @@ const routes: Routes = [
 
   },
   {
-    path:'add-drug',
+    path:'adddrug',
     component: AddDrugComponent
 
   },
