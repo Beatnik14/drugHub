@@ -1,3 +1,18 @@
+html,body {margin: 0; padding: 0;}
 .example-spacer {
     flex: 1 1 auto;
+  }
+  .header{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    /* background-color: rgb(3, 36, 34); */
+
+  }
+  mat-toolbar{
+    background-color: rgb(3, 36, 34);
+  }
+  .DragHub{
+    font-size: 25px;
+    font-family: 'Hanalei Fill', cursive;
   }
