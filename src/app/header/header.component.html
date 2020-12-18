@@ -1,21 +1,28 @@
 <div class="header">
-  
-    <mat-toolbar >
-     
-      
-      
-      <button mat-button class="DragHub">DrugHub</button>
-      <span class="example-spacer"></span>
-      <button mat-button>მედიკამენტები</button>
-      <span class="example-spacer"></span>
-      <button mat-button>მიმართულებები</button>
-      <span class="example-spacer"></span>
-      <button mat-button>ჩვენს შესახებ</button>
-      <span class="example-spacer"></span>
-      <button mat-button>კონტაქტი</button>
-      
-      
-      
-    </mat-toolbar>
-  
+
+  <mat-toolbar>
+
+
+
+    <button mat-button class="DragHub" [routerLink]="['home']">DrugHub</button>
+    <span class="example-spacer"></span>
+    <button mat-button [routerLink]="['drugs']">მედიკამენტები</button>
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu" [routerLink]="['medicalField']" >განყოფილებები</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>პედიატრია</button>
+      <button mat-menu-item>გინეკოლოგია</button>
+      <button mat-menu-item>ოფთალმოლოგია</button>
+      <button mat-menu-item>დერმატოლოგია</button>
+      <button mat-menu-item>კარდიოლოგია</button>
+    </mat-menu>
+    <span class="example-spacer"></span>
+    <button mat-button [routerLink]="['aboutus']" >ჩვენს შესახებ</button>
+    <span class="example-spacer"></span>
+    <button mat-button [routerLink]="['contact']">კონტაქტი</button>
+
+
+
+  </mat-toolbar>
+
 </div>
