@@ -8,23 +8,23 @@
    
 }
 .information{
-    width: 50%;
+    width: 60%;
     margin: 2vh auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .copyright{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
     align-items: center;
     margin: 0 auto;
 }
 hr{
     
-    width: 60%;
+    width: 50%;
 }
 .p{
     margin: auto auto;
