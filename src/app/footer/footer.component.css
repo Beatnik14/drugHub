@@ -1,0 +1,40 @@
+.footer{
+    
+    height: auto;
+    background-color: rgb(3, 36, 34);
+    margin: 100% 0 0 0;
+    color: white;
+    padding: 2vh 30%;
+   
+}
+.information{
+    width: 50%;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+}
+hr{
+    
+    width: 60%;
+}
+.p{
+    margin: auto auto;
+}
+.copyrightP{
+    display: flex;
+    flex-direction: row;
+     justify-content: center; 
+    align-items: center;
+}
+/* p{
+    margin: 0 auto;
+} */
