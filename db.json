@@ -1,13 +1,22 @@
 {
-    "drugs": [
-      {
-        "id": 0,
-        "name": "ვალიდოლი",
-        "date": "27/12/2020",
-       "type":"ტაბლეტი",
-        "aquantity": "3",
-        "description":"მიიღეთ დღეში სამჯერ",
-        "tel":"21321321"
-      }
-    ]
+  "drugs": [
+    {
+      "name": "გელა123",
+      "date": "2020-12-25T20:00:00.000Z",
+      "type": "kafsula",
+      "quantity": 2,
+      "description": "ewrwerw",
+      "mobileNumber": "3546334325",
+      "id": 1
+    },
+    {
+      "name": "wesfs344",
+      "date": "2020-12-16T20:00:00.000Z",
+      "type": "kafsula",
+      "quantity": 343,
+      "description": "fgg4vxc44",
+      "mobileNumber": "343463234",
+      "id": 2
+    }
+  ]
 }
