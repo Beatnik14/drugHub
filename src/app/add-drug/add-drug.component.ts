@@ -34,7 +34,7 @@ export class AddDrugComponent implements OnInit {
   onSubmit() {
 
     console.log(this.loginForm);
-    console.log(this.loginForm.controls.username.value);
+    console.log(this.loginForm.controls.drugName.value);
     console.log(this.loginForm.controls.expireDate.value);
     console.log(this.loginForm.controls.drugType.value);
     console.log(this.loginForm.controls.drugRange.value);
