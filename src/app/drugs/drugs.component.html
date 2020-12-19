@@ -1,28 +1,30 @@
 <div class="input">
     <input type="text" placeholder="Search drug" [(ngModel)]="search" #ctrl="ngModel">
-    <button (click)="onSearch()" type="button" style="cursor: pointer;">
+    <button id="searchBtn"(click)="onSearch()" type="button" style="cursor: pointer;">
         <mat-icon class="icon">search</mat-icon>
     </button>
 </div>
 <div class="searchesTitle">
-    <p>ყველაზე მოთხოვნადი წამლები</p>
+    <p>ბოლო სამი საძებო სიტყვა</p>
 </div>
 <div class="searchHistory">
     <div class="singleSearchHistory">
-        <p>პარაცეტამოლი</p>
+        <p>{{searchHistory[0]}}</p>
     </div>
     <div class="singleSearchHistory">
-        <p>ციტრამონი</p>
+        <p>{{searchHistory[1]}}</p>
     </div>
     <div class="singleSearchHistory">
-        <p>დექსალგინი</p>
+        <p>{{searchHistory[2]}}</p>
     </div>
 </div>
 <hr>
 
 <div Class="usersGrid">
 
-    <!-- <app-user *ngFor="let item of users" [user]="item" [routerLink]="['/user',item.id, item.login]" class="singleUser"
+    <app-drug *ngFor="let item of drugs" [drug]="item" class="singleUser"
+        ></app-drug>
+    <!-- <app-user *ngFor="let item of drugs" [drug]="item" [routerLink]="['/user',item.id, item.login]" class="singleUser"
         [gridModeValue]="gridMode"></app-user> -->
 
 </div>

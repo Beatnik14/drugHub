@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-drug',
@@ -12,4 +12,5 @@ export class DrugComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() drug;
 }

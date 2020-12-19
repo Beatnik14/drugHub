@@ -42,3 +42,17 @@ button {
     width: 100%;
     margin-top: 10px;
   }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white!important;
+    opacity: 1; /* Firefox */
+  }
+  input{
+    color: white!important;
+    border-bottom-color:white!important ;
+  }
+  mat-label{
+    color: white!important;
+  }
+  mat-form-field{
+    border-bottom-color:white!important ;
+  }

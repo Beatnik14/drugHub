@@ -8,6 +8,7 @@ html,body {
     margin: 0; 
     padding: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: rgb(223, 223, 223);
+    background: linear-gradient(80deg,  #43cea2, #004e92);
+    /* background-color: rgb(223, 223, 223); */
 
 }

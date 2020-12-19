@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { DrugModel } from '../models/drug.model';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +10,8 @@ export class DrugServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getDrugs(){
-    return this.http.get('http://localhost:3000/drugs');
+  getDrugs(): Observable <Array<DrugModel>>{
+    return this.http.get<Array<DrugModel>>('http://localhost:3000/drugs');
   }
 
 
