@@ -1,48 +1,12 @@
 
-<!-- <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
-    <div>
-        <mat-form-field appearance="fill">
-            <mat-label>Title</mat-label>
-            <input matInput type="text" formControlName="title">
-            <mat-error *ngIf="addProductForm.get('title').invalid">title invalid</mat-error>
-        </mat-form-field>
-    </div>
-    <div>
-        <mat-form-field appearance="fill">
-            <mat-label>Price</mat-label>
-            <input matInput type="number" formControlName="price">
-            <mat-error *ngIf="addProductForm.get('price').invalid">price invalid</mat-error>
-        </mat-form-field>
-    </div>
-    <div>
-        <mat-form-field appearance="fill">
-            <mat-label>Description</mat-label>
-            <textarea matInput formControlName="description"></textarea>
-            <mat-error *ngIf="addProductForm.get('description').invalid">description invalid</mat-error>
-        </mat-form-field>
-    </div>
-   
-    <div formArrayName="images">
-        <div  style="margin-top: 5px;">
-            <mat-form-field appearance="fill" class="img-field">
-                <mat-label>image</mat-label>
-                <input matInput type="text">
-            </mat-form-field>
-           
-        </div>
-    </div>
-    <div>
-        <button mat-raised-button color="primary" >Add Product</button>
-    </div>
-</form> -->
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="container">
       <div class="example-container">
         <div>
           <mat-form-field appearance="fill">
             <mat-label>მედიკამენტის სრული დასახელება</mat-label>
-            <input matInput type="text" formControlName="username">
-            <mat-error *ngIf="loginForm.get('username').invalid">{{getUserbaneErrorMessage()}}</mat-error>
+            <input matInput type="text" formControlName="drugName">
+            <mat-error *ngIf="loginForm.get('drugName').invalid">{{getUserbaneErrorMessage()}}</mat-error>
   
           </mat-form-field>
         </div>
