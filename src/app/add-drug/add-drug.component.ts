@@ -9,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AddDrugComponent implements OnInit {
   addProductForm: FormGroup;
   constructor() { }
+  hide = true;
 
   ngOnInit(): void {
     this.addProductForm = new FormGroup({
