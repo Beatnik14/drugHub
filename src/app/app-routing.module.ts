@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AddDrugComponent } from './add-drug/add-drug.component';
 import { ContactComponent } from './contact/contact.component';
 import { DrugsComponent } from './drugs/drugs.component';
+import { GetDrugComponent } from './get-drug/get-drug.component';
 import { HomeComponent } from './home/home.component';
 import { MedicalFieldComponent } from './medical-field/medical-field.component';
 
@@ -43,6 +44,11 @@ const routes: Routes = [
   {
     path:'adddrug',
     component: AddDrugComponent
+
+  },
+  {
+    path:'getdrug',
+    component: GetDrugComponent
 
   },
 ];
