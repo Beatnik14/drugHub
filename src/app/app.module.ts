@@ -40,7 +40,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     AboutUsComponent,
     ContactComponent,
     GetDrugComponent,
-    MatNativeDateModule
+  
 
   ],
   imports: [
@@ -60,7 +60,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatNativeDateModule
     
   ],
   providers: [],
