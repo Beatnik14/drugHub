@@ -23,6 +23,9 @@ import { MedicalFieldComponent } from './medical-field/medical-field.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { GetDrugComponent } from './get-drug/get-drug.component';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -35,8 +38,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     HomeComponent,
     MedicalFieldComponent,
     AboutUsComponent,
-    ContactComponent
-    
+    ContactComponent,
+    GetDrugComponent,
+    MatNativeDateModule
 
   ],
   imports: [
@@ -53,7 +57,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatCardModule,
     ReactiveFormsModule,
     MatMenuModule,
-    MatDatepickerModule
+    
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule
     
   ],
   providers: [],

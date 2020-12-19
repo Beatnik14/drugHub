@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-add-drug',
-  templateUrl: './add-drug.component.html',
-  styleUrls: ['./add-drug.component.css']
+  selector: 'app-get-drug',
+  templateUrl: './get-drug.component.html',
+  styleUrls: ['./get-drug.component.css']
 })
-export class AddDrugComponent implements OnInit {
-  addProductForm: FormGroup;
+export class GetDrugComponent implements OnInit {
+
+    addProductForm: FormGroup;
   constructor() { }
- 
   
   
   hide = true;
@@ -45,5 +45,4 @@ getUserbaneErrorMessage(){
   }
   
   }
-  
-  }
+}

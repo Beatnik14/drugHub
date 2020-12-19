@@ -23,6 +23,7 @@ html,body {margin: 0; padding: 0;}
   button{
     font-weight: 500;
     font-size: 1.1rem;
+    color: white;
   }
   .DragHub{
     font-size: 30px;
