@@ -26,6 +26,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { GetDrugComponent } from './get-drug/get-drug.component';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatCardModule,
     ReactiveFormsModule,
     MatMenuModule,
-    
+    FormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,

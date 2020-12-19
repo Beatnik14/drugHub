@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drugs.component.css']
 })
 export class DrugsComponent implements OnInit {
-
+  search;
   constructor() { }
 
   ngOnInit(): void {
   }
+  onSearch(){
 
+  }
 }
