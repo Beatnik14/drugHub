@@ -35,6 +35,15 @@
       "description": "fgg4vxc44",
       "mobileNumber": "343463234",
       "id": 4
+    },
+    {
+      "name": "პარაცეტამოლი",
+      "date": "2021-02-01T20:00:00.000Z",
+      "type": "tableti",
+      "quantity": 8,
+      "description": "აღარ დამჭირდა",
+      "mobileNumber": "599 99 33 22",
+      "id": 5
     }
   ]
 }
