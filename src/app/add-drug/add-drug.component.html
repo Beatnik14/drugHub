@@ -13,7 +13,7 @@
         <div>
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>მედიკამენტი ვარგისია:</mat-label>
-                <input matInput [matDatepicker]="picker">
+                <input matInput [matDatepicker]="picker" formControlName="expireDate">
                 <mat-datepicker-toggle matSuffix [for]="picker">
                   <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
                 </mat-datepicker-toggle>
@@ -23,24 +23,24 @@
         <div>
             <mat-form-field appearance="fill">
                 <mat-label>მედიკამენტის სახეობა</mat-label>
-                <mat-select>
-                  <mat-option value="option">ტაბლეტი</mat-option>
-                  <mat-option value="option">კაფსულა</mat-option>
-                  <mat-option value="option">წვეთები</mat-option>
-                  <mat-option value="option">ამპულა</mat-option>
+                <mat-select formControlName="drugType">
+                  <mat-option value="tableti" >ტაბლეტი</mat-option>
+                  <mat-option value="kafsula">კაფსულა</mat-option>
+                  <mat-option value="tsvetebi">წვეთები</mat-option>
+                  <mat-option value="ampula">ამპულა</mat-option>
                 </mat-select>
               </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="fill" >
                 <mat-label>რაოდენობა</mat-label>
-                <input matInput type="number" min="1" >
+                <input matInput type="number" min="1" formControlName="drugRange">
               </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="fill">
                 <mat-label>აღწერა</mat-label>
-                <textarea matInput></textarea>
+                <textarea matInput formControlName="drugDescription"></textarea>
               </mat-form-field>
         </div>
         <div>
@@ -51,7 +51,7 @@
                 <mat-form-field class="example-full-width">
                   <mat-label>მობილურის ნომერი</mat-label>
                   <span matPrefix>+995 &nbsp;</span>
-                  <input type="tel" matInput placeholder="XXX-XXX-XXX">
+                  <input type="tel" matInput placeholder="XXX-XXX-XXX" formControlName="mobileNumber">
                 </mat-form-field>
               
         </div>

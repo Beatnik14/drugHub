@@ -19,8 +19,13 @@ export class AddDrugComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
-      username: new FormControl(null, [Validators.required, Validators.minLength(6)]),
-      password: new FormControl(null, Validators.required)
+      username: new FormControl(null, [Validators.minLength(6)]),
+      expireDate: new FormControl(null ),
+      drugType: new FormControl(null ),
+      drugRange: new FormControl(null ),
+      drugDescription: new FormControl(null ),
+      mobileNumber: new FormControl(null ),
+      
     });
     
 
@@ -29,7 +34,11 @@ export class AddDrugComponent implements OnInit {
 
     console.log(this.loginForm);
     console.log(this.loginForm.controls.username.value);
-    console.log(this.loginForm.controls.password.value);
+    console.log(this.loginForm.controls.expireDate.value);
+    console.log(this.loginForm.controls.drugType.value);
+    console.log(this.loginForm.controls.drugRange.value);
+    console.log(this.loginForm.controls.drugDescription.value);
+    console.log(this.loginForm.controls.mobileNumber.value);
     
   }
 
