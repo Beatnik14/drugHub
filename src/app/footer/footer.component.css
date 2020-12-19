@@ -2,14 +2,14 @@
     
     height: auto;
     background-color:rgb(40, 141, 129);
-    margin: 10% 0 0 0;
+    margin: 20% 0 0 0;
     color: white;
     padding: 2vh 30%;
    
 }
 .information{
     width: 60%;
-    margin: 2vh auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
