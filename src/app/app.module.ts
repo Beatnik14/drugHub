@@ -6,10 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
-import { HttpClientModule } from '@angular/common/http';
+
 import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
 import {MatButtonModule} from '@angular/material/button';
 import { AddDrugComponent } from './add-drug/add-drug.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -27,6 +26,9 @@ import { GetDrugComponent } from './get-drug/get-drug.component';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DrugComponent } from './drug/drug.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -41,6 +43,8 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     ContactComponent,
     GetDrugComponent,
+    DrugComponent,
+    
   
 
   ],
@@ -63,7 +67,10 @@ import { FormsModule } from '@angular/forms';
     MatNativeDateModule,
     MatCheckboxModule,
     MatNativeDateModule,
-    HttpClientModule
+    CarouselModule,
+  
+    HttpClientModule,
+    CarouselModule
     
   ],
   providers: [],

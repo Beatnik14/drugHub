@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="AddDrugForm" (ngSubmit)="onSubmit()">
   <div class="container">
     <div class="example-container">
 
@@ -8,7 +8,7 @@
         <mat-form-field appearance="fill">
           <mat-label>მედიკამენტის სრული დასახელება</mat-label>
           <input matInput type="text" formControlName="drugName">
-          <mat-error *ngIf="loginForm.get('drugName').invalid">{{getUserbaneErrorMessage()}}</mat-error>
+          
 
         </mat-form-field>
       </div>
@@ -37,7 +37,7 @@
       <div>
         <mat-form-field appearance="fill">
           <mat-label>რაოდენობა</mat-label>
-          <input matInput type="number" min="1" formControlName="drugRange">
+          <input matInput type="number" min="1" formControlName="drugQuantity">
         </mat-form-field>
       </div>
       <div>

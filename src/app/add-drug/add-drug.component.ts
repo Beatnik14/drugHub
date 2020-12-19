@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { DrugModel } from '../models/drug.model';
+import {DrugServiceService} from '../services/drug-service.service'
 
 @Component({
   selector: 'app-add-drug',
@@ -8,22 +10,23 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AddDrugComponent implements OnInit {
   addProductForm: FormGroup;
-  constructor() { }
+  constructor(private drugService: DrugServiceService) { }
+  
  
   
   
   hide = true;
-  loginForm: FormGroup;
+  AddDrugForm: FormGroup;
 
 
   
 
   ngOnInit(): void {
-    this.loginForm = new FormGroup({
+    this.AddDrugForm = new FormGroup({
       drugName: new FormControl(null, [Validators.minLength(6)]),
       expireDate: new FormControl(null ),
       drugType: new FormControl(null ),
-      drugRange: new FormControl(null ),
+      drugQuantity: new FormControl(null ),
       drugDescription: new FormControl(null ),
       mobileNumber: new FormControl(null ),
       
@@ -32,27 +35,27 @@ export class AddDrugComponent implements OnInit {
 
   }
   onSubmit() {
-
-    console.log(this.loginForm);
-    console.log(this.loginForm.controls.drugName.value);
-    console.log(this.loginForm.controls.expireDate.value);
-    console.log(this.loginForm.controls.drugType.value);
-    console.log(this.loginForm.controls.drugRange.value);
-    console.log(this.loginForm.controls.drugDescription.value);
-    console.log(this.loginForm.controls.mobileNumber.value);
+       let newDrug = new DrugModel
+       (
+         this.AddDrugForm.controls.drugName.value,
+         this.AddDrugForm.controls.expireDate.value, 
+         this.AddDrugForm.controls.drugType.value, 
+         this.AddDrugForm.controls.drugQuantity.value, 
+         this.AddDrugForm.controls.drugDescription.value, 
+         this.AddDrugForm.controls.mobileNumber.value
+         );
+         this.drugService.addDrug(newDrug)
+         .subscribe()
+    console.log(this.AddDrugForm);
+    console.log(this.AddDrugForm.controls.drugName.value);
+    console.log(this.AddDrugForm.controls.expireDate.value);
+    console.log(this.AddDrugForm.controls.drugType.value);
+    console.log(this.AddDrugForm.controls.drugQuantity.value);
+    console.log(this.AddDrugForm.controls.drugDescription.value);
+    console.log(this.AddDrugForm.controls.mobileNumber.value);
     
   }
 
-getUserbaneErrorMessage(){
-  const usernameControl = this.loginForm.get('username');
-  if(usernameControl.errors.required){
-    return 'username is required'
-  }else if(usernameControl.errors.minlength){
-    return `you need to enter ${usernameControl.errors.minlength.requiredLength} characters`
-  }else if(usernameControl.errors.customEmailValidation){
-    return 'please enter valid email'
-  }
-  
-  }
+
   
   }
