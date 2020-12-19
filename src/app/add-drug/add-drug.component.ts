@@ -20,7 +20,7 @@ export class AddDrugComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
-      username: new FormControl(null, [Validators.minLength(6)]),
+      drugName: new FormControl(null, [Validators.minLength(6)]),
       expireDate: new FormControl(null ),
       drugType: new FormControl(null ),
       drugRange: new FormControl(null ),
