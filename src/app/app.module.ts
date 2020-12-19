@@ -22,6 +22,8 @@ import { HomeComponent } from './home/home.component';
 import { MedicalFieldComponent } from './medical-field/medical-field.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { ContactComponent } from './contact/contact.component';
     MatSelectModule,
     MatCardModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule
     
   ],
   providers: [],
