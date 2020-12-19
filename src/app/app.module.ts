@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DrugComponent } from './drug/drug.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     ContactComponent,
     GetDrugComponent,
     DrugComponent,
+    CarouselComponent,
     
   
 
