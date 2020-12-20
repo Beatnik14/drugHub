@@ -3,8 +3,10 @@ html,body {margin: 0; padding: 0;}
     flex: 1 1 auto;
   }
   .header{
+    z-index: 1000;
     margin: 0;
     
+    width: 100%;
     height: auto;
     padding: 1vh 5%;
     background-color:rgb(239,92,82);
@@ -14,7 +16,7 @@ html,body {margin: 0; padding: 0;}
     background-color:rgb(40, 141, 129);
     background-color:transparent;
     /* border-bottom: 0.5px solid  rgba(255, 255, 255, 0.4); */
-    background: linear-gradient(80deg,  #2ec092, #0f4f8f);
+    background: linear-gradient(80deg,  #21ac80, #08417a);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
   }
   mat-toolbar{

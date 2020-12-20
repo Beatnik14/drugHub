@@ -31,6 +31,7 @@ import { DrugComponent } from './drug/drug.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselComponent } from './carousel/carousel.component';
 import { DrugDetailComponent } from './drug-detail/drug-detail.component';
+import { DermatologyComponent } from './dermatology/dermatology.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { DrugDetailComponent } from './drug-detail/drug-detail.component';
     DrugComponent,
     CarouselComponent,
     DrugDetailComponent,
+    DermatologyComponent,
     
   
 
