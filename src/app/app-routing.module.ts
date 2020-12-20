@@ -53,7 +53,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'user/:id/:username',
+    path: 'drug/:id/:name',
     component: DrugDetailComponent
   }
 ];
