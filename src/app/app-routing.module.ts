@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddDrugComponent } from './add-drug/add-drug.component';
 import { ContactComponent } from './contact/contact.component';
+import { DrugDetailComponent } from './drug-detail/drug-detail.component';
 import { DrugsComponent } from './drugs/drugs.component';
 import { GetDrugComponent } from './get-drug/get-drug.component';
 import { HomeComponent } from './home/home.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
     component: GetDrugComponent
 
   },
+  {
+    path: 'user/:id/:username',
+    component: DrugDetailComponent
+  }
 ];
 
 @NgModule({

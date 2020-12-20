@@ -1,4 +1,4 @@
-<div class="mobilephones">
+<div class="drugs" >
 
   <div>
 
@@ -48,7 +48,10 @@
       </mat-card-content>
       <mat-card-actions>
         <!-- <button mat-button>LIKE</button> -->
-        <button mat-button>view details</button>
+        <a href="" [routerLink] = "['drugs',drug.id, drug.name]">
+          <button mat-button>view details</button>
+        </a>
+        
       </mat-card-actions>
     </mat-card>
 

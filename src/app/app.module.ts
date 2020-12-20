@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DrugComponent } from './drug/drug.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselComponent } from './carousel/carousel.component';
+import { DrugDetailComponent } from './drug-detail/drug-detail.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     GetDrugComponent,
     DrugComponent,
     CarouselComponent,
+    DrugDetailComponent,
     
   
 

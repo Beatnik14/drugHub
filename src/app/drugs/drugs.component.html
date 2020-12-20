@@ -22,8 +22,7 @@
 
 <div Class="usersGrid">
 
-    <app-drug *ngFor="let item of drugs" [drug]="item" class="singleUser"
-        ></app-drug>
+    <app-drug *ngFor="let item of drugs" [drug]="item" class="singleUser" [routerLink] = "['/drug',item.id, item.name]"></app-drug>
     <!-- <app-user *ngFor="let item of drugs" [drug]="item" [routerLink]="['/user',item.id, item.login]" class="singleUser"
         [gridModeValue]="gridMode"></app-user> -->
 

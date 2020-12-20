@@ -29,6 +29,11 @@ hr{
 }
 .p{
     margin: auto auto;
+    width: 50%;
+    height: auto;
+}
+.p1{
+    margin: auto auto;
 }
 .copyrightP{
     display: flex;
