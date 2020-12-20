@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AddDrugComponent } from './add-drug/add-drug.component';
 import { ContactComponent } from './contact/contact.component';
+import { DermatologyComponent } from './dermatology/dermatology.component';
 import { DrugDetailComponent } from './drug-detail/drug-detail.component';
 import { DrugsComponent } from './drugs/drugs.component';
 import { GetDrugComponent } from './get-drug/get-drug.component';
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'drug/:id/:name',
     component: DrugDetailComponent
+  },
+  {
+    path: 'dermatology',
+    component: DermatologyComponent
   }
 ];
 

@@ -46,13 +46,8 @@ export class AddDrugComponent implements OnInit {
          );
          this.drugService.addDrug(newDrug)
          .subscribe()
-    console.log(this.AddDrugForm);
-    console.log(this.AddDrugForm.controls.drugName.value);
-    console.log(this.AddDrugForm.controls.expireDate.value);
-    console.log(this.AddDrugForm.controls.drugType.value);
-    console.log(this.AddDrugForm.controls.drugQuantity.value);
-    console.log(this.AddDrugForm.controls.drugDescription.value);
-    console.log(this.AddDrugForm.controls.mobileNumber.value);
+         alert("მედიკამენტი დამატებულია ბაზაში, მადლობა დონაციისთვის!")
+    
     
   }
 

@@ -6,10 +6,15 @@
     bottom: 0;
     left: 0; */
     width: 100%;
+    background: linear-gradient(80deg,  #21ac80, #08417a);
     color: white;
     padding: 2vh 30%;
     background-color:transparent;
     border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    margin: 75vh 0 0 0;
+    
 }
 .information{
     width: 60%;
