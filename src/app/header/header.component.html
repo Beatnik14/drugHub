@@ -8,13 +8,14 @@
     <span class="example-spacer"></span>
     <button mat-button [routerLink]="['drugs']">მედიკამენტები</button>
     <span class="example-spacer"></span>
-    <button mat-button [matMenuTriggerFor]="menu" [routerLink]="['medicalField']" >განყოფილებები</button>
+    <button mat-button [matMenuTriggerFor]="menu"  >განყოფილებები</button>
     <mat-menu #menu="matMenu">
-      <button class="menuitem" mat-menu-item >პედიატრია</button>
-      <button class="menuitem" mat-menu-item>გინეკოლოგია</button>
-      <button class="menuitem" mat-menu-item>ოფთალმოლოგია</button>
-      <button class="menuitem" mat-menu-item>დერმატოლოგია</button>
-      <button class="menuitem" mat-menu-item>კარდიოლოგია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">დერმატოლოგია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">ენდოკრინოლოგია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">ოფთალმოლოგია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">პედიატრია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">კარდიოლოგია</button>
+      <button class="menuitem" mat-menu-item [routerLink]="['medicalField']">ნევროლოგია</button>
     </mat-menu>
     <span class="example-spacer"></span>
     <button mat-button [routerLink]="['aboutus']" >ჩვენს შესახებ</button>
