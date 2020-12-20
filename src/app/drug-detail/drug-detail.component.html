@@ -1,0 +1,27 @@
+<div class="drugs">
+
+    <div>
+
+
+        <mat-card class="example-card">
+            <!-- <div style="width:50%px; height: auto; object-fit: cover; margin: 0 auto;"> -->
+            <div class="carousel">
+              <img src="../../assets/1.png" alt="">
+            </div>
+
+
+            <mat-card-header>
+                <mat-card-title>დასახელება: {{drugFromApi.name}}</mat-card-title>
+                <mat-card-subtitle>ტიპი: {{drugFromApi.type}}</mat-card-subtitle>
+                <mat-card-subtitle>ვადის გასვლის თარიღი: {{drugFromApi.date}}</mat-card-subtitle>
+                <mat-card-subtitle>რაოდენობა: {{drugFromApi.quantity}}</mat-card-subtitle>
+                <mat-card-subtitle>აღწერა: {{drugFromApi.description}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <button mat-raised-button [routerLink]="['/getdrug']">შეკვეთა</button>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
+</div>
